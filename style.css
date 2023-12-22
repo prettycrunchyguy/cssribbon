@@ -161,13 +161,18 @@ body{
     padding-right:15px;
     color:white;
     margin-left:5px;
-    margin-right:5px;
+    /*margin-right:5px;*/
+}
+.ribbon-tab:hover{
+    background-color:rgba(255,255,255,0.7);
+    border-radius:3px 3px 0px 0px;
+    border:1px solid rgba(139, 144, 151, 0.7);
 }
 .ribbon-tab-active{
     padding-top:4px;
     padding-bottom:4px;
     margin-left:5px;
-    margin-right:5px;
+    /*margin-right:5px;*/
     padding-left:15px;
     padding-right:15px;
     color:white;
@@ -180,6 +185,7 @@ body{
     color: #636363;
     font-size:12px;
     user-select: none;
+    pointer-events:none
 }
 .ribbon-tab-active .ribbon-title{
     color:#4F565F;
