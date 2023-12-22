@@ -1,0 +1,97 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0862bc">
+    <title>Office 2010 Ribbon by crunchyguy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="7.css">
+</head>
+
+<body>
+    <!--<div id="title3"></div>
+    <div id="titleglass"></div>
+    <div id="titlebar" style="justify-content: space-between;border:none;box-shadow:none;z-index:3" class="title-bar">
+        <span style="display:inline-flex;app-region:none;user-select:none;">
+            <!--img src="smallicon.png" style="width:20px">
+            <div class="title-bar-text2" style="margin-left:5px;margin-right:5px;display:none"> | </div>
+            <div class="title-icon"><img src="icons/shell32_16761.ico" style="width:20px;height:20px"></div>
+        </span>
+        <div class="title-bar-text" style="user-select:none;font-size:12px">PaperNote</div>
+        <span style="position:relative;left:-7;app-region:none;display:inline-block" id="caption">
+            <span id="min" style="/*background:url('assets/minimize.png') no-repeat center calc(50% + 3px)*/"><img src="assets/minimize.png"></span>
+            <span id="max" style="/*background:url('assets/maximize.png') no-repeat 50%*/"><img id="maxicon" src="assets/maximize.png"></span>
+            <span id="close"><img src="assets/close.png"></span>
+        </span>
+    </div>-->
+    <!--div id="titlebar" style="background-color:#0862bc">
+        <center style="color:black;font-family: 'Segoe UI';font-size:13px;padding-top:8px;" class="title-bar-text">
+            PaperNote</center>
+    </div>
+    <div style="background:linear(#0862bc,#DFE9F5);width:100%" id="ribbon">
+        <div class="ribbon-tab" id="format-tab">
+            <span class="ribbon-title">ms-windows-store://pdp?productid=9WZDNCRFJ3PV</span>
+        </div>
+    </div-->
+    <!--div class="window active"
+        style="min-width:100%;min-height:100%;padding:0;top:0;left:0;position:fixed;background-color:#0862bc"
+        id="window">
+        <div class="title-bar" style="background-color:#0862bc;app-region:drag;border:0" id="title">
+            <span style="display:inline-flex;app-region:none;user-select:none;">
+                <img src="smallicon.png">
+                <div class="title-bar-text2" style="margin-left:5px;margin-right:5px"> | </div>
+                <div class="title-icon"><img src="icons/shell32_16761.ico" style="width:16px;height:16px"></div>
+            </span>
+            <div class="title-bar-text" style="user-select:none;">PaperNote</div>
+            <span style="display:inline-flex">
+                <div class="title-bar-controls" style="app-region:none;left:0px;position:relative" id="caption">
+                    <button aria-label="Minimize" id="min"></button>
+                    <button aria-label="Maximize" id="max"></button>
+                    <button aria-label="Close" id="close" style="padding-right:3px"></button>
+                </div>
+                <span style="width:0px;height:10px" id="close-corner"></span>
+            </span>
+        </div>
+        <div class="window-body has-space" style="height:calc(100vh - 78px);margin-top:29px" id="body">
+            <div id="ribbon"
+                style="width:calc(100vw - 11px);top:29px;left:7px;position:fixed;height:29px;background:linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0.7));">
+                <div id="file-tab">
+                    <span class="ribbon-title">File</span>
+                </div>
+            </div>
+            <div style="background:linear(#0862bc,#DFE9F5);width:calc(100vw - 16px);top:70px;left:8px;position:fixed;height:23px;display:none"
+                id="ribbon2">
+                <div class="ribbon-tab" id="format-tab">
+                    <span class="ribbon-title">ms-windows-store://pdp?productid=9WZDNCRFJ3PV</span>
+                </div>
+            </div>
+        </div>
+    </div-->
+    <div id="ribbon"
+        style="width:calc(100vw - 11px + 11px);top:0px;left:0px;position:fixed;height:29px;background:linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0.6));">
+        <div id="file-tab">
+            <span class="ribbon-title">File</span>
+        </div>
+        <div class="ribbon-tab-active">
+            <span class="ribbon-title">Home</span>
+        </div>
+        <div class="ribbon-tab">
+            <span class="ribbon-title">View</span>
+        </div>
+        <div class="ribbon-tab">
+            <span class="ribbon-title">Reader</span>
+        </div>
+    </div>
+    <div style="background:linear(#0862bc,#DFE9F5);width:calc(100vw - 16px);top:70px;left:8px;position:fixed;height:23px;display:none"
+        id="ribbon2">
+        <div class="ribbon-tab" id="format-tab">
+            <span class="ribbon-title">ms-windows-store://pdp?productid=9WZDNCRFJ3PV</span>
+        </div>
+    </div>
+    <div style="position:fixed;background:linear-gradient(#AAC5E7 0%,#5C85BB 100%);width:100vw;height:calc(100vh - 23px);top:30px;left:0px"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

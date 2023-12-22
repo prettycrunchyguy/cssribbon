@@ -1,0 +1,192 @@
+body {
+    font-family: "Segoe UI"
+}
+#titleglass{
+    background: /*linear-gradient(135deg, #fff5 70px, transparent 100px), linear-gradient(225deg, #fff5 70px, transparent 100px), */linear-gradient(54deg, #0002 0 4%, #6661 6% 6%, #0002 8% 10%, #0002 15% 16%, #aaa1 17% 18%, #0002 23% 24%, #bbb2 25% 26%, #0002 31% 33%, #0002 34% 34.5%, #bbb2 36% 40%, #0002 41% 41.5%, #bbb2 44% 45%, #bbb2 46% 47%, #0002 48% 49%, #0002 50% 50.5%, #0002 56% 56.5%, #bbb2 57% 63%, #0002 67% 69%, #bbb2 69.5% 70%, #0002 73.5% 74%, #bbb2 74.5% 79%, #0002 80% 84%, #aaa2 85% 86%, #0002 87%, #bbb1 90%) 0/100vw 100vh no-repeat fixed;
+    opacity:0.4;
+    width: env(titlebar-area-width, 100%);
+    height: env(titlebar-area-height, 45px);
+    position:fixed;
+    padding-top:0px;
+    left: env(titlebar-area-x, 0);
+    top: env(titlebar-area-y, 0);
+    z-index:2;
+}
+#title3{
+    background-color:rgba(24,90,189,1);
+    width: env(titlebar-area-width, 100%);
+    height: env(titlebar-area-height, 45px);
+    position:fixed;
+    padding-top:0px;
+    left: env(titlebar-area-x, 0);
+    top: env(titlebar-area-y, 0);
+}
+#titlebar{
+    background-color:transparent;
+    width: env(titlebar-area-width, 100%);
+    height: env(titlebar-area-height, 39px);
+    app-region: drag;
+    position:fixed;
+    padding-top:0px;
+    left: env(titlebar-area-x, 0);
+    top: env(titlebar-area-y, 0);
+}
+#caption{
+    height:46px
+}
+#caption span{
+    /*padding-left:23px;
+    padding-right:23px;
+    padding-top:23px;
+    padding-bottom:23px;
+    width:45px;*/
+    padding:18px;
+    margin-top:20px;
+    width:46px;
+    height:46px;
+    background-repeat:no-repeat
+}
+#min:hover{
+    background: radial-gradient(circle at bottom, #2aceda, transparent 65%), linear-gradient(#b6d9ee 50%, #1a6ca1 0);
+}
+#max:hover{
+    background: radial-gradient(circle at bottom, #2aceda, transparent 65%), linear-gradient(#b6d9ee 50%, #1a6ca1 0);
+}
+#maxicon{
+    pointer-events: none;
+}
+#close:hover{
+    background: linear-gradient(hsla(0, 0%, 100%, .5), hsla(0, 0%, 100%, .3) 45%, rgba(0, 0, 0, .1) 50%, rgba(0, 0, 0, .1) 75%, hsla(0, 0%, 100%, .5)), radial-gradient(circle at 50% 170%, #f4e676 10% 20%, #0000 60%), radial-gradient(circle at -60% 50%, #000a 5% 10%, #0000 50%), radial-gradient(circle at 160% 50%, #000a 5% 10%, #0000 50%), linear-gradient(#fb9d8b, #ee6d56 25% 50%, #d42809 50%);
+}
+#close{
+    right:0;
+    position:fixed;
+}
+.title-icon img{
+    pointer-events: auto;
+}
+.title-icon img{
+    pointer-events: none;
+    width:20px;
+    height:20px
+}
+.title-icon{
+    width:20px;
+    height:20px
+}
+.title-icon:hover {
+    background: linear-gradient(#FEE8A3 33%,#FFDA6F 66%, #FCF4D2 100%);
+    border-radius:2px;
+}
+/*#titlebar {
+    position: fixed;
+    app-region: drag;
+    box-shadow: 0px 0px 8px 2px light blue;
+    left: env(titlebar-area-x, 0);
+    
+    top: env(titlebar-area-y, 0);
+    
+    width: env(titlebar-area-width, 100%);
+    height: env(titlebar-area-height, 33px);
+    padding-top:0px;
+    background: linear-gradient(135deg, #fff5 70px, transparent 100px), linear-gradient(225deg, #fff5 70px, transparent 100px), linear-gradient(54deg, #0002 0 4%, #6661 6% 6%, #0002 8% 10%, #0002 15% 16%, #aaa1 17% 18%, #0002 23% 24%, #bbb2 25% 26%, #0002 31% 33%, #0002 34% 34.5%, #bbb2 36% 40%, #0002 41% 41.5%, #bbb2 44% 45%, #bbb2 46% 47%, #0002 48% 49%, #0002 50% 50.5%, #0002 56% 56.5%, #bbb2 57% 63%, #0002 67% 69%, #bbb2 69.5% 70%, #0002 73.5% 74%, #bbb2 74.5% 79%, #0002 80% 84%, #aaa2 85% 86%, #0002 87%, #bbb1 90%) 0/100vw 100vh no-repeat fixed
+}*/
+body{
+    background: radial-gradient(circle at right bottom,#a5c3e7ff 0%,#3961b1ff 100%)
+}
+#ribbon {
+    font-family: "Segoe UI";
+
+    cursor: default;
+    font-size: 8pt;
+    /*padding-top: 10px;*/
+    /*background-color: #eaedf1;*/
+    border-bottom: 1px solid #8b9097;
+    -webkit-box-shadow: #8b9097 0px 1px 3px;
+    -moz-box-shadow: #8b9097 0px 1px 3px;
+    box-shadow: #8b9097 0px 1px 0px;
+    overflow: hidden;
+    height: 135px;
+    position:sticky;
+    width:100vh;
+    align-items: flex-end;
+    display:flex
+}
+#ribbon2 {
+    font-family: "Segoe UI";
+
+    cursor: default;
+    font-size: 8pt;
+    padding-top: 10px;
+    background-color: #eaedf1;
+    border-bottom: 1px solid #8b9097;
+    -webkit-box-shadow: #8b9097 0px 1px 3px;
+    -moz-box-shadow: #8b9097 0px 1px 3px;
+    box-shadow: #8b9097 0px 1px 3px;
+    overflow: hidden;
+    height: 135px;
+    position:sticky;
+    width:100vh
+}
+.ribbon-title {
+    background-color: linear-gradient(#FBFDFF, #FAFDFF);
+    font-size: 15px;
+    border-radius: 2px
+}
+#close:after{
+    padding-left:10px
+}
+#file-tab{
+    border:1px solid #2550A7;
+    border-radius:3px 3px 0px 0px;
+    background: radial-gradient(circle at bottom,rgba(255,255,255,0.02),transparent),linear-gradient(to bottom,#3771CD,#2961B3 50%,#458BE1 100%);
+    padding-top:4px;
+    padding-bottom:4px;
+    padding-left:20px;
+    padding-right:20px;
+    color:white;
+}
+#file-tab:hover{
+    border: 1px solid #2450A7;
+    background: radial-gradient(circle at bottom,rgba(255,255,255,0.03),transparent),linear-gradient(to bottom,#437EDD,#2E65BE 50%,#4388E0 100%);
+}
+#file-tab:active{
+    border:1px solid #275BB2;
+    background:linear-gradient(#235CB1 0%,#285FB1 50%,#388BE6 100%)
+}
+.ribbon-tab{
+    padding-top:4px;
+    padding-bottom:4px;
+    padding-left:15px;
+    padding-right:15px;
+    color:white;
+    margin-left:5px;
+    margin-right:5px;
+}
+.ribbon-tab-active{
+    padding-top:4px;
+    padding-bottom:4px;
+    margin-left:5px;
+    margin-right:5px;
+    padding-left:15px;
+    padding-right:15px;
+    color:white;
+    background-color:white;
+    border-radius:3px 3px 0px 0px;
+    border:1px solid #8b9097;
+    border-bottom:0px
+}
+.ribbon-title{
+    color: #636363;
+    font-size:12px;
+    user-select: none;
+}
+.ribbon-tab-active .ribbon-title{
+    color:#4F565F;
+}
+#file-tab .ribbon-title{
+    font-size:12px;
+    color:white;
+    text-shadow:#2056AB -1px 1px;
+    user-select:none
+}
