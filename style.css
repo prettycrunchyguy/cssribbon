@@ -101,7 +101,7 @@ body{
     font-size: 8pt;
     /*padding-top: 10px;*/
     /*background-color: #eaedf1;*/
-    border-bottom: 1px solid #8b9097;
+    /*border-bottom: 1px solid #8b9097;*/
     -webkit-box-shadow: #8b9097 0px 1px 3px;
     -moz-box-shadow: #8b9097 0px 1px 3px;
     box-shadow: #8b9097 0px 1px 0px;
@@ -110,7 +110,8 @@ body{
     position:sticky;
     width:100vh;
     align-items: flex-end;
-    display:flex
+    display:flex;
+    z-index:4
 }
 #ribbon2 {
     font-family: "Segoe UI";
@@ -145,14 +146,17 @@ body{
     padding-left:20px;
     padding-right:20px;
     color:white;
+    border-bottom:none
 }
 #file-tab:hover{
     border: 1px solid #2450A7;
     background: radial-gradient(circle at bottom,rgba(255,255,255,0.03),transparent),linear-gradient(to bottom,#437EDD,#2E65BE 50%,#4388E0 100%);
+    border-bottom:none
 }
 #file-tab:active{
     border:1px solid #275BB2;
-    background:linear-gradient(#235CB1 0%,#285FB1 50%,#388BE6 100%)
+    background:linear-gradient(#235CB1 0%,#285FB1 50%,#388BE6 100%);
+    border-bottom:none
 }
 .ribbon-tab{
     padding-top:4px;
@@ -168,6 +172,7 @@ body{
     border-radius:3px 3px 0px 0px;
     border:1px solid rgba(139, 144, 151, 0.5);
     border-bottom:none;
+    margin-left:4px
 }
 .ribbon-tab-active{
     padding-top:4px;
@@ -180,7 +185,10 @@ body{
     background-color:white;
     border-radius:3px 3px 0px 0px;
     border:1px solid #8b9097;
-    border-bottom:0px
+    border-bottom:0px solid white;
+    z-index:6;
+    position:sticky;
+    margin-top:1px;
 }
 .ribbon-title{
     color: #636363;
