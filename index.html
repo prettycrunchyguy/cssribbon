@@ -70,7 +70,7 @@
         </div>
     </div-->
     <div id="ribbon"
-        style="width:calc(100vw - 11px + 11px);top:0px;left:0px;position:fixed;height:29px;background:linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0.6));">
+        style="width:calc(100vw - 11px + 11px);top:0px;left:0px;position:fixed;height:29px;background:linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0.6));display:flex">
         <div id="file-tab">
             <span class="ribbon-title">File</span>
         </div>
@@ -86,16 +86,28 @@
         <div class="ribbon-tab">
             <span class="ribbon-title">Extensions</span>
         </div>
+        <span style="flex:1"></span>
+        <div class="title-icon"><img src="icons/shell32_16761.ico" style="width:20px;height:20px"></div>
+        <div class="title-icon"><img src="assets/ribbonmin.png" style="width:20px;height:20px"></div>
+        <span style="margin-right:5px">
+            <input type="search" placeholder="Tell me what you want to do"
+                style="border:none;background-color:rgba(255,255,255,0.6)" id="search" />
+        </span>
     </div>
-    <div id="selected-tab" style="height:1px;width:62.17px;background-color:white;left:64.78px;top:29px;position:fixed;z-index:7"></div>
+    <div id="selected-tab"
+        style="height:1px;width:64.7px;background-color:white;left:64.78px;top:29px;position:fixed;z-index:7"></div>
     <div style="background:linear(#0862bc,#DFE9F5);width:calc(100vw - 16px);top:70px;left:8px;position:fixed;height:23px;display:none"
         id="ribbon2">
         <div class="ribbon-tab" id="format-tab">
             <span class="ribbon-title">ms-windows-store://pdp?productid=9WZDNCRFJ3PV</span>
         </div>
     </div>
-    <div style="position:fixed;background:linear-gradient(white 0%,#E7EBEF 100%);width:100vw;left:0px;top:29px;height:84px;z-index:5;box-shadow:100vw 3px 3px #AEB1B6;border-bottom:1px solid #8B9097;border-top:1px solid #8B9097"></div>
-    <div style="position:fixed;background:linear-gradient(#AAC5E7 0%,#5C85BB 100%);width:100vw;height:calc(100vh - 107px);top:114px;left:0px"></div>
+    <div
+        style="position:fixed;background:linear-gradient(white 0%,#E7EBEF 100%);width:100vw;left:0px;top:29px;height:84px;z-index:5;box-shadow:100vw 3px 3px #AEB1B6;border-bottom:1px solid #8B9097;border-top:1px solid #8B9097">
+    </div>
+    <div
+        style="position:fixed;background:linear-gradient(#AAC5E7 0%,#5C85BB 100%);width:100vw;height:calc(100vh - 107px);top:114px;left:0px;background:linear-gradient(#CCD0D4 0%,#BBBFC3 100%)">
+    </div>
     <script src="script.js"></script>
 </body>
 

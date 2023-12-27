@@ -1,6 +1,16 @@
 body {
     font-family: "Segoe UI"
 }
+#search{
+    margin-bottom:2px;
+    user-select: none;
+}
+#search:hover{
+    background-color: rgba(255,255,255,0.8);
+}
+#search:focus{
+    background-color: rgba(255,255,255,0.9);
+}
 #titleglass{
     background: /*linear-gradient(135deg, #fff5 70px, transparent 100px), linear-gradient(225deg, #fff5 70px, transparent 100px), */linear-gradient(54deg, #0002 0 4%, #6661 6% 6%, #0002 8% 10%, #0002 15% 16%, #aaa1 17% 18%, #0002 23% 24%, #bbb2 25% 26%, #0002 31% 33%, #0002 34% 34.5%, #bbb2 36% 40%, #0002 41% 41.5%, #bbb2 44% 45%, #bbb2 46% 47%, #0002 48% 49%, #0002 50% 50.5%, #0002 56% 56.5%, #bbb2 57% 63%, #0002 67% 69%, #bbb2 69.5% 70%, #0002 73.5% 74%, #bbb2 74.5% 79%, #0002 80% 84%, #aaa2 85% 86%, #0002 87%, #bbb1 90%) 0/100vw 100vh no-repeat fixed;
     opacity:0.4;
@@ -72,11 +82,18 @@ body {
 }
 .title-icon{
     width:20px;
-    height:20px
+    height:20px;
+    margin-bottom:3px;
+    margin-right:2px;
+    user-select:none
 }
 .title-icon:hover {
     background: linear-gradient(#FEE8A3 33%,#FFDA6F 66%, #FCF4D2 100%);
     border-radius:2px;
+    border:1px solid #F3C238;
+    margin-bottom:2px;
+    margin-right:1px;
+    margin-left:-1px
 }
 /*#titlebar {
     position: fixed;
@@ -92,6 +109,7 @@ body {
     background: linear-gradient(135deg, #fff5 70px, transparent 100px), linear-gradient(225deg, #fff5 70px, transparent 100px), linear-gradient(54deg, #0002 0 4%, #6661 6% 6%, #0002 8% 10%, #0002 15% 16%, #aaa1 17% 18%, #0002 23% 24%, #bbb2 25% 26%, #0002 31% 33%, #0002 34% 34.5%, #bbb2 36% 40%, #0002 41% 41.5%, #bbb2 44% 45%, #bbb2 46% 47%, #0002 48% 49%, #0002 50% 50.5%, #0002 56% 56.5%, #bbb2 57% 63%, #0002 67% 69%, #bbb2 69.5% 70%, #0002 73.5% 74%, #bbb2 74.5% 79%, #0002 80% 84%, #aaa2 85% 86%, #0002 87%, #bbb1 90%) 0/100vw 100vh no-repeat fixed
 }*/
 body{
+    background: #0078D4;
     background: radial-gradient(circle at right bottom,#a5c3e7ff 0%,#3961b1ff 100%);
 }
 #ribbon {
